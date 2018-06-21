@@ -9,10 +9,10 @@ namespace RPSLS.cs
     class PlayerOneInputSelections
     {
         // member variables(has a)
-        public object playerOneChoice;
+        public string playerOneChoice;
 
         // constructor
-        public PlayerOneInputSelections(object playerOneChoice)
+        public PlayerOneInputSelections(string playerOneChoice)
         {
             this.playerOneChoice = playerOneChoice;
         }

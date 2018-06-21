@@ -42,10 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllPlayerSelections.cs" />
+    <Compile Include="CalculateWinLoseTie.cs" />
+    <Compile Include="ComputerSelection.cs" />
+    <Compile Include="ComputerChoiceRandomizer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PlayerOneInputSelections.cs" />
     <Compile Include="PlayerTwoInputSelections.cs" />
+    <Compile Include="ScoreCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
