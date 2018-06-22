@@ -9,9 +9,6 @@ namespace RPSLS.cs
     public class Player
     {
         //member variables (has a)
-        public string name;
-        //public int choice;
-        public int gesture;
         public int choice;
 
         // constructor (things the class needs)
@@ -20,24 +17,9 @@ namespace RPSLS.cs
             
         }
 
-        
-
-        public string PossibleGestures()
+        // member methods
+        public virtual void GetPlayerChoice()
         {
-            List<string> gestures = new List<string>();
-            gestures.Add("Rock");
-            gestures.Add("Paper");
-            gestures.Add("Scissors");
-            gestures.Add("Spock");
-            gestures.Add("Lizard");
-            
-
-            return gestures[choice];
-        }
-
-        public virtual int GetPlayerChoice()
-        {
-            int choice = 0;
             Console.WriteLine("Make a selection for your gesture. You may choose Rock, Paper, Scissors, Spock, or Lizard.");
             string playerSelection = Console.ReadLine();
             playerSelection.ToLower();
@@ -59,9 +41,11 @@ namespace RPSLS.cs
                 case "lizard":
                     choice = 4;
                     break;
+                default:
+                    Console.WriteLine("Please enter something better.");
+                    GetPlayerChoice();
+                    break;
             }
-            return choice;
         }
-
     }
 }

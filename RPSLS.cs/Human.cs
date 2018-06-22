@@ -9,17 +9,17 @@ namespace RPSLS.cs
     public class Human : Player
     {
         // member variables
-
+        
         
 
         // constructor
         public Human()
         {
-
+            
         }
 
         // member methods
-
+        
 
 
 
