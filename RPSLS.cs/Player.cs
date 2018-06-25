@@ -18,7 +18,7 @@ namespace RPSLS.cs
         }
 
         // member methods
-        public virtual void GetPlayerChoice()
+        public virtual void MakePlayerChoice()
         {
             Console.WriteLine("Make a selection for your gesture. You may choose Rock, Paper, Scissors, Spock, or Lizard.");
             string playerSelection = Console.ReadLine();
@@ -43,7 +43,7 @@ namespace RPSLS.cs
                     break;
                 default:
                     Console.WriteLine("Please enter something better.");
-                    GetPlayerChoice();
+                    MakePlayerChoice();
                     break;
             }
         }

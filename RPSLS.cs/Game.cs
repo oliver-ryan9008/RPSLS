@@ -45,7 +45,10 @@ namespace RPSLS.cs
         }
         public void RunRound()
         {
-
+            playerOne.MakePlayerChoice();
+            Console.ReadLine();
+            playerTwo.MakePlayerChoice();
+            Console.ReadLine();
         }
     }
 }

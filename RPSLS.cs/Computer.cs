@@ -13,7 +13,7 @@ namespace RPSLS.cs
             
         }
 
-        public override void GetPlayerChoice()
+        public override void MakePlayerChoice()
         {
             Random random = new Random();
             choice = random.Next(0, 4);
