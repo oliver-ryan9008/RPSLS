@@ -21,7 +21,7 @@ namespace RPSLS.cs
         public virtual void MakePlayerChoice()
         {
             Console.WriteLine("Make a selection for your gesture. You may choose Rock, Paper, Scissors, Spock, or Lizard.");
-            string playerSelection = Console.ReadLine();
+            string playerSelection = Console.ReadLine().ToLower();
             playerSelection.ToLower();
 
             switch (playerSelection)

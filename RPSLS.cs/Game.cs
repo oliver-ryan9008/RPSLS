@@ -8,9 +8,8 @@ namespace RPSLS.cs
 {
     class Game
     {
-
-
-
+        public string playerOneChoice;
+        public string playerTwoChoice;
         Player playerOne;
         Player playerTwo;
 
@@ -37,7 +36,7 @@ namespace RPSLS.cs
                     break;
                 default:
                     Console.WriteLine("You've entered nothing valuable. Please read better.");
-
+                    StartGame();
                     break;
             }
 
@@ -45,10 +44,16 @@ namespace RPSLS.cs
         }
         public void RunRound()
         {
+            
             playerOne.MakePlayerChoice();
-            Console.ReadLine();
+            playerOneChoice = Console.ReadLine();
+            Console.WriteLine("Player one choice is " + playerOneChoice);
             playerTwo.MakePlayerChoice();
-            Console.ReadLine();
+            playerTwoChoice = Console.ReadLine();
+            Console.WriteLine("Player two choice is " + playerTwoChoice);
+            Console.ReadKey();
+
+
         }
     }
 }
